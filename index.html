@@ -11,39 +11,72 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution { font-size: 11px; text-align: center; }
-      .attribution a { color: hsl(228, 45%, 44%); }
-    </style>
   </head>
+  
   <body>
+
     <div class="card">
       <img src="/images/drawers.jpg" alt="a green dresser with framed artwork and a vase on top of it" class="card__img">
-      <h1 class="card__title">
-        Shift the overall look and feel by adding these wonderful touches to furniture in your home
-      </h1>
-      <p class="card__body">
-        Ever been in a room and felt like something was missing? Perhaps 
-        it felt slightly bare and uninviting. I’ve got some simple tips 
-        to help you make any room feel complete.    
-      </p>
-      <div class="user">
-        <img src="/images/avatar-michelle.jpg" alt="avatar of Michelle Appleton" class="user__avatar">
-        <div class="user__info">
-          <h2 class="user__name">Michelle Appleton</h2>
-          <h3 class="user__date">28 Jun 2020</h3>
+      <div class="card__content">
+
+        <!-- Main content -->
+        <h1 class="card__title">
+          Shift the overall look and feel by adding these wonderful touches to furniture in your home
+        </h1>
+
+        <p class="card__body">
+          Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.    
+        </p>
+
+        <div class="bottom">
+          <div class="bottom__content">
+            <img src="/images/avatar-michelle.jpg" alt="avatar of Michelle Appleton" class="bottom__avatar">
+            <div class="bottom__user">
+              <h2 class="bottom__name">Michelle Appleton</h2>
+              <h3 class="bottom__date">28 Jun 2020</h3>
+            </div>
+          </div>
+
+          <!-- Share pannel -->
+          <div class="share">
+            <button class="share__btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                <path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+              </svg>
+            </button>
+
+            <!-- Share pannel content -->
+            <div class="bottom--active">
+              <div class="bottom__share">
+                <h2 class="bottom__copy">Share</h2>
+                <div class="bottom__social-icons">
+                  <a href="https://www.facebook.com/" class="bottom__social-link">
+                    <img src="/images/icon-facebook.svg" alt="facebook link icon" class="bottom__social-icon">
+                  </a>
+                  <a href="https://twitter.com/" class="bottom__social-link">
+                    <img src="/images/icon-twitter.svg" alt="facebook link icon" class="bottom__social-icon">
+                  </a>
+                  <a href="https://www.pinterest.com/" class="bottom__social-link">
+                    <img src="/images/icon-pinterest.svg" alt="facebook link icon" class="bottom__social-icon">
+                  </a>
+                </div> <!-- bottom__social-icons -->
+              </div> <!-- bottom__share -->
+              <button class="share__btn--active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                  <path class="btn__icon" fill="#FFFFFF" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+                </svg>
+              </button>
+            </div> <!-- end of share pannel content -->
+          </div> <!-- end of share pannel -->
         </div>
       </div>
     </div>
-
-
-    Share
     
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/rraschbaum/profile-card-component-main">Ryan Raschbaum</a>.
     </div>
     <script src="/app.js"></script>
   </body>
